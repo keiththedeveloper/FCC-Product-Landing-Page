@@ -1,0 +1,16 @@
+.feature {
+  max-width: 50rem;
+}
+
+.feature-desc {
+  font-size: smaller;
+}
+
+i.bi {
+  font-size: xxx-large;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+}

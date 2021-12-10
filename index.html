@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC:Product Landing Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://picsum.photos/200/300"
+            alt="Media Tracker"
+            id="header-img"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Media Tracker
+        </a>
+        <ul class="navbar-nav navbar-expand-lg">
+          <li class="nav-item">
+            <a class="nav-link" href="#features" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how-it-works" class="nav-link"
+              >How It Works</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing" class="nav-link">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero" class="container-md text-center p-5">
+      <h3>Track All your Media Consumption from one Place.</h3>
+      <form
+        action=" https://www.freecodecamp.com/email-submit"
+        method="post"
+        id="form"
+      >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email address."
+          class="form-control-md"
+        />
+        <input
+          type="submit"
+          value="Get Started"
+          id="submit"
+          class="btn btn-warning"
+        />
+      </form>
+    </section>
+    <div class="container text-center">
+      <section id="features ">
+        <div class="h3">Media Tracker Features</div>
+        <div class="card-group row row-cols-1 p-3">
+          <div class="col">
+            <div class="card feature m-2">
+              <div class="row g-0">
+                <div class="col-sm-3">
+                  <i class="bi bi-list-check text-warning"></i>
+                </div>
+                <div class="col-sm-9 feature-heading">
+                  <div class="card-body">
+                    <div class="card-title h6">Track Media Consumption</div>
+                    <p class="card-text feature-desc">
+                      List Movies,TV Shows,Podcasts,Video Games,Books,Music,etc.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card feature m-2">
+              <div class="row g-0">
+                <div class="col-sm-3">
+                  <i class="bi bi-film text-warning"></i>
+                </div>
+                <div class="col-sm-9 feature-heading">
+                  <div class="card-body">
+                    <div class="card-title h6">Reviews & Ratings</div>
+                    <p class="card-text feature-desc">
+                      Write Reviews and Add Ratings For the Shows
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card feature m-2">
+              <div class="row g-0">
+                <div class="col-sm-3">
+                  <i class="bi bi-collection-play text-warning"></i>
+                </div>
+                <div class="col-sm-9 feature-heading">
+                  <div class="card-body">
+                    <div class="card-title h6">Streaming Media</div>
+                    <p class="card-text feature-desc">
+                      Stream Media like Movies,TV Shows,Podcasts,Music,etc.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works" class="container">
+        <iframe
+          class="how-it-works-vid"
+          src="https://www.youtube.com/embed/nWeqzSxgI5Q"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="pricing">
+        <h4>Pricing</h4>
+        <h5>We currently offer the following membership rates:</h5>
+
+        <div class="product-pricing card-group">
+          <div class="row row-cols-3 g-2">
+            <div class="col">
+            <div class="product-pricing-box card border-dark h-100">
+              <div class="product-pricing-heading card-header">
+                Individual Monthly
+              </div>
+              <div class="card-body">
+                <h2 class="card-text">$19.99</h2>
+                <p class="card-text">billed monthly</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="product-pricing-box card border-dark h-100">
+              <div class="product-pricing-heading card-header card-header">
+                Individual Annual
+              </div>
+              <div class="card-body">
+                <h2 class="card-text">$149.99</h2>
+                <p class="desc card-text">
+                  billed annually, equivalent to only $12.50/Month. Save 37%!)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="product-pricing-box card border-dark h-100">
+              <div class="product-pricing-heading card-header card-header">
+                Group Plan Monthly
+              </div>
+              <div class="card-body">
+                <h2 class="card-text">$79.99</h2>
+                <p class="desc card-text">billed monthly, up to 5 members</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="text-muted">
+      <nav >
+        <ul class="nav justify-content-end">
+          <li class="nav-item"><a class="nav-link" href="http://">Privacy</a></li>
+          <li class="nav-item"><a  class="nav-link" href="http://">Terms</a></li>
+          <li class="nav-item"><a  class="nav-link" href="http://">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="text-end">Copyright &copy; 2021, Media Tracker</p>
+    </footer>
+  </body>
+</html>
