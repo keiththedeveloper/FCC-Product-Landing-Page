@@ -10,7 +10,17 @@ i.bi {
   font-size: xxx-large;
 }
 
-iframe {
-  width: 100%;
-  height: auto;
+@media screen and (min-width: 768px) {
+  iframe {
+    width: 30rem;
+    height: 20rem;
+  }
+}
+
+@media screeen and (max-width: 768px) {
+  #nav-bar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+  }
 }
